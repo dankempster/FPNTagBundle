@@ -6,8 +6,8 @@
 
     <mapped-superclass name="FPN\TagBundle\Entity\Tagging" table="fpn_tag_tagging">
 
-        <id name="resourceType"  column="resource_type"  type="string" length="50" />
-        <id name="resourceId"    column="resource_id"    type="string" length="50" />
+        <id name="resourceType"  column="resource_type"  type="integer" />
+        <id name="resourceId"    column="resource_id"    type="integer" />
         <id name="tag"           column="tag_id"         association-key="true" />
 
         <field name="createdAt"     column="created_at"     type="datetime" />
